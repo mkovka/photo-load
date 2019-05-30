@@ -51,7 +51,7 @@ class App extends React.Component {
               exact={true}
               path="/albums/:id"
               render={props => (
-                <Photos {...props} data={albums[props.match.params.id - 1].data} />
+                <Photos {...props} data={albums[0] ? albums[props.match.params.id - 1].data : []} />
               )}
             />
             <Route
@@ -61,7 +61,7 @@ class App extends React.Component {
                 <PhotoItem
                   {...props}
                   photo={
-                    albums[props.match.params.id - 1].data[props.match.params.photoId]
+                    albums[0] ? albums[props.match.params.id - 1].data[props.match.params.photoId] : {}
                   }
                 />
               )}
