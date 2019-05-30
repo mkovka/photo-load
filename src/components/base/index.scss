@@ -1,0 +1,15 @@
+.base-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          flex: 1;
+          > a {
+                    width: calc((100% - 40px) / 6);
+                    @media all and (max-width: 1400px) {
+                      width: calc((100% - 40px) / 3);
+                    }
+                    @media all and (max-width: 1000px) {
+                      width: calc((100% - 40px) / 1);
+                    }
+          }
+}
