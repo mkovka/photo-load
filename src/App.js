@@ -1,7 +1,7 @@
 import React from "react";
 import Base from "./components/base";
 import Photos from "./components/photos";
-import PhotoItem from "./components/photo";
+import PhotoItem from "./components/photos/photo";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 

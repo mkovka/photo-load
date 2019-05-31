@@ -1,5 +1,5 @@
 import React from "react";
-import "./photo.scss";
+import "./index.scss";
 
 const PhotoItem = (props) =>  (
     <div className="photo-item">

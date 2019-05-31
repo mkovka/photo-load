@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink as RouterLink } from 'react-router-dom';
-import './photos.scss';
+import './index.scss';
 
 export default class Photos extends React.Component {
   renderPhotos = () => {
